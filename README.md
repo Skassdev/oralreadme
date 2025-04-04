@@ -151,7 +151,7 @@ NOTIFICATION_KEY=pour-que-les-notifs-marchent
 
 ## 📱 Qui contacter
 
-**Créateur** : Kevin L. (promo 2025)
+**Créateur** : Sabri
 
 **Insta** : @studybuddy_support
 
