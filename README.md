@@ -1,159 +1,164 @@
-# StudyBuddy
+# 📚 StudyBuddy Pro
 
-> Une app mobile pour **aider les étudiants** à organiser leurs études, developée en *React Native* et ***NodeJS***
+> Une application tout-en-un pour **survivre à la fac**, codée en *React Native* et ***Firebase*** par un étudiant pour des étudiants
 
 ## Sommaire
 
-- [StudyBuddy](#studybuddy)
+- [📚 StudyBuddy Pro](#-studybuddy-pro)
   - [Sommaire](#sommaire)
-  - [À propos](#à-propos)
-    - [Liste des besoins](#liste-des-besoins)
-  - [Fonctionnalités](#fonctionnalités)
-  - [Alertes](#alertes)
-  - [Tableau](#tableau)
-  - [Technologies utilisée](#technologies-utilisée)
-  - [Prérequis](#prérequis)
-  - [Installation](#installation)
-  - [Commandes utiles](#commandes-utiles)
-  - [Tests](#tests)
-  - [Roadmap](#roadmap)
-  - [Contact](#contact)
+  - [🌟 Pourquoi cette app?](#-pourquoi-cette-app)
+    - [Problèmes résolus](#problèmes-résolus)
+  - [✨ Ce que tu peux faire avec](#-ce-que-tu-peux-faire-avec)
+  - [⚠️ Trucs à savoir](#️-trucs-à-savoir)
+  - [💰 Forfaits dispo](#-forfaits-dispo)
+  - [🛠️ Comment c'est fait](#️-comment-cest-fait)
+  - [💻 Pour installer (dev)](#-pour-installer-dev)
+  - [⚡ Comment lancer](#-comment-lancer)
+  - [🧪 Tests (pour les profs)](#-tests-pour-les-profs)
+  - [🔮 Ce qui arrive bientot](#-ce-qui-arrive-bientot)
+  - [📱 Qui contacter](#-qui-contacter)
 
-## À propos
+## 🌟 Pourquoi cette app?
 
-StudyBuddy a été créé pour résoudre la galère des étudiants avec leurs devoirs et cours.
+J'ai créé StudyBuddy Pro parce que je galérais trop à m'organiser et jvoulais aider les autres étudiants à pas se noyer dans leur boulot.
 
-Il répond au besoins suivants : 
+Le but c'est de simplifier la vie étudiante: 
 
-![](public/img/studybuddy-logo.png)
+![](assets/img/logo-studibudy.png)
 
 <div>
-  <img src="public/img/studybuddy-logo.png" width=100px>
+  <img src="assets/img/screen1.png" width=200px>
+  <img src="assets/img/screen2.png" width=200px>
 </div>
 
-### Liste des besoins
+### Problèmes résolus
 
-- **Organiser son emploi du temps facilement**
-* *Gérer ses projets et devoirs*
-+ Améliorer sa productivité
+- **La flemme d'organiser son emploi du temps**
+* *Se faire surprendre par des deadlines*
++ Procrastiner comme un champion
++ Oublier des exams importants
 
-Il est en cours de dévelopement mais utilisable en beta
-
----
-
-## Fonctionnalités
-
-- ✅ Plannification des cours (emploi du temps)
-- ✅ Gestion des devoirs avec rappels
-- ✅ Minuteur Pomodoro intégré
-- ✅ Partage de notes avec les potes
-- ❌ Mode hors-ligne (prévu pour v2.0)
+Version beta 0.8.4 - Dernière maj: 15/03/2025
 
 ---
 
-## Alertes
+## ✨ Ce que tu peux faire avec
+
+- ✅ Voir tous tes cours dans un planning stylé
+- ✅ Recevoir des notifs avant les deadlines importantes
+- ✅ Bosser efficacement avec le chrono Pomodoro personalisable
+- ✅ Partager/récupérer des fiches de révision
+- ✅ Scanner tes docs et cours avec ton appreil photo
+- ❌ Connexion à Pronote (bientôt dispo 🤞)
+
+---
+
+## ⚠️ Trucs à savoir
 
 > [!NOTE]
-> L'app est en beta, donc ya des bugs parfois
+> La synchro peut prendre un peu de temps, soit pas pressé
 
 > [!TIP]
-> Utilise les tags pour trier tes devoirs par matière
+> Double-clique sur un cours pour voir les détails et ajouter des notes
 
 > [!IMPORTANT]
-> Faut configurer les notifs dans les paramètres de ton tel
+> Autorise l'accès au calendrier et aux notifs sinon ca marche pas
 
 > [!WARNING]
-> Si t'as pas internet, certains trucs marcheront pas
+> Perds pas ton mot de passe, la récup est pas encore au point lol
 
 > [!CAUTION]
-> Fais des sauvegardes de tes notes importantes
+> Si ton téléphone est un vieux dinosaure, l'app risque de ramer
 
-## Tableau 
+## 💰 Forfaits dispo
 
-| Forfait | Prix | Fonctionnalités |
+| Forfait | Prix | Ce que t'as |
 | :--------------|:------:|----------------:|
-| Gratuit | 0€/mois | Basiques |
-| Etudiant | 2.99€/mois | Avancées |
-| Premium | 4.99€/mois | Tout inclus |
+| Basic | Gratuit | Planning + Tâches |
+| Pro | 2.49€/mois | Basic + Scanner + Pomodoro |
+| Premium | 4.99€/mois | Pro + IA qui prédit tes notes |
 
 ---
 
-## Technologies utilisée
+## 🛠️ Comment c'est fait
 
-- **Frontend** : React Native
-- **Backend** : Node.js / Express
-- **Base de données** : MongoDB
-- **Tests** : Jest
+- **Frontend** : React Native + quelques trucs customisés
+- **Backend** : Firebase (c'est plus simple)
+- **Base de données** : Firestore + un peu de SQLite
+- **Autres** : API Google Calendar, système de notifs custom
 
 ---
 
-## Prérequis
+## 💻 Pour installer (dev)
 
-Assure-toi d'avoir installé:
+Vérifie que t'as ça:
 
-- [ ] Node.js >=16.x 
-- [ ] Git
-- [ ] Expo CLI (pour dev mobile)
+- [ ] Node.js (v16 minimum) 
+- [ ] Git (pour récup le code)
+- [ ] Android Studio ou Xcode selon ton tel
 
-## Installation
+Le code:
 
-Citation du code
-
-1. **Clone le dépôt**
+1. **Chope le code**
 
 ```bash
-git clone https://github.com/studybuddy-app/studybuddy.git
-cd studybuddy
+git clone https://github.com/kevin2023/studybuddy-pro.git
+cd studybuddy-pro
 ```
-2. **Installe les trucs**
+2. **Configure tout**
 
 ```bash
 npm installl
-# ou
-yarn ad
+# t'inquiète pas pour les warnings c normal
 ```
 
-3. **Fais un fichier .env**
+3. **Balance tes clés API dans un fichier .env**
 
 ```env
-PORT=3000
-MONGODB_URL=mongodb://localhost:27017/studybuddy
-JWT_SECRET=c'estsecret
+FIREBASE_API_KEY=ta-clé-secrète
+GOOGLE_API=google-calendar-truc
+NOTIFICATION_KEY=pour-que-les-notifs-marchent
 ```
 
 ---
 
-## Commandes utiles
+## ⚡ Comment lancer
 
-| Commande | C'est quoi |
+| Commande | Keskecéca |
 | ------------------|---------------|
-| `npm strat` | Lance l'app |
-| `npm buld` | Compile l'app |
-| `npm test` | Lance les tests |
-| `npm run lint` | Vérifie si ton code est propre |
+| `npm strat` | Lance l'app en mode dev |
+| `npm run ios` | Démarre sur iPhone |
+| `npm run android` | Démarre sur Android |
+| `npm buld` | Pour créer l'APK/IPA |
 
 
 ----
 
 
-## Tests
+## 🧪 Tests (pour les profs)
 
-- **Tests unitaires** avec Jest
-- **Tests sur mobile** avec Expo
+- **Tests basic** : `npm test` (mais y'en a pas beaucoup)
+- **Tester en vrai** : Installe l'app et essaye, c'est le mieux
 
-## Roadmap
+## 🔮 Ce qui arrive bientot
 
-- [x] Emploi du temps
-- [x] Système de rappels
-- [ ] Mode hors-ligne
-- [ ] Stats d'études
+- [x] Système de login/inscription
+- [x] Planning interactif
+- [x] Pomodoro timer
+- [ ] Connection à Pronote/ENT
+- [ ] Export des notes en PDF
+- [ ] Widgets pour écran d'accueil
 
-## Contact
+## 📱 Qui contacter
 
-**Auteur** : Sabri
+**Créateur** : Kevin L. (promo 2025)
 
-**Email** : sabri@gmail.com
+**Insta** : @studybuddy_support
 
-**GitHub** : [studybuddy-app](https://github.com/studybuddy-app)
+**Discord** : [Serveur StudyBuddy](https://discord.gg/studybuddy)
 
-**Site web** : [https://.frm](https://studybuddy-app.com)
+**Site** : [studybuddy-app.fr](https://studybuddy-app.fr)
+
+---
+
+Codé pendant les heures de TD d'Analyse de données 🤫
